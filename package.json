@@ -1,0 +1,23 @@
+{
+  "name": "mvc-tech-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "seeds": "node seeds/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.4",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.5",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
+  }
+}

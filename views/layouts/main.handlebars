@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="flex-row" style="gap: 96px;">
+            <a href="/"
+                style="text-decoration: none; color: var(--primary); max-width: 75%; padding-bottom: 1.5%; font-size: 1.2rem">Home</a>
+            <a href="/dashboard"
+                style="text-decoration: none; color: var(--primary); max-width: 75%; padding-bottom: 1.5%; font-size: 1.2rem">Dashboard</a>
+            {{#if loggedIn}}
+            <button id="logout"
+                style="all: unset; cursor: pointer; max-width: 75%; padding-bottom: 1.5%; font-size: 1.2rem">Logout</button>
+            {{else}}
+            <a href="/login"
+                style="text-decoration: none; color: var(--primary); max-width: 75%; padding-bottom: 1.5%; font-size: 1.2rem">Login</a>
+            {{/if}}
+        </nav>
+        <h1 class="app-title">{{title}}</h1>
+    </header>
+    <main class="">
+        {{{body}}}
+    </main>
+    {{#if loggedIn}}
+    <script src=" /assets/js/logout.js">
+    </script>
+        {{/if}}
+</body>
+
+</html>
