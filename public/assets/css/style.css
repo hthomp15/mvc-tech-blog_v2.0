@@ -45,6 +45,11 @@
     /* adding margin */
     margin: 0;
   }
+
+  ul {
+    padding-inline-start: 0;
+    list-style: none;
+  }
   
   .p-class {
     font-size: 1.2rem;

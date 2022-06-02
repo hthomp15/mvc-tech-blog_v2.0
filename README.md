@@ -9,8 +9,9 @@
 - As a developer who writes about tech, I want a CMS-style blog site.
 - So that I can publish articles, blog posts, and my thoughts and opinions.
 
-(Live Link) ()
+(Live Link) (https://secret-temple-19477.herokuapp.com/)
 
 ## Screenshots
+<img src="./public/assets/images/homepage.png">
 
 Made with ❤️ by Haile Thompson
